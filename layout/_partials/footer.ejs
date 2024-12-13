@@ -2,6 +2,19 @@
   <% if (theme.copyright) { %>
     <%- theme.copyright %>
   <% } else { %>
-    © <%= new Date().getFullYear() %> <%= config.title %> - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+    ©
+    <% if (theme.copyrightStartYear) { %>
+      <%- theme.copyrightStartYear %>-<%= new Date().getFullYear() %>
+    <% } else { %>
+			<%= new Date().getFullYear() %>
+		<% } %>
+    <%= config.title %>
+    <% if(theme.busuanzi.enable) { %>
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"> </script>
+      <span id="busuanzi_container_site_uv"  style='display:none'>
+      - 博客访问数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> Hits
+      </span>
+    <% } %>
+	- Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
   <% } %>
 </div>

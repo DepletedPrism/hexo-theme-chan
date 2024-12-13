@@ -12,6 +12,7 @@ avatar: https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200
 avatarLink: /about
 maxContentWidth: 1000px # set the main content column's max-width property. keep it blank to unlimited the width
 copyright: # the copyright text in the footer, could be richtext
+copyrightStartYear: # the start year used in displaying copyright when copyright text is not given
 
 # sidebar navigator structure
 # It's a list with item that is also list.
@@ -43,16 +44,6 @@ nav:
       name: RSS
       url: /atom.xml
 
-# duoshuo shortname
-# refer to http://duoshuo.com
-# If you use disqus then you should set disqus_shortname in your site config and disable duoshuo here.
-# You also need to set 'comments' to true in the front-matter
-#duoshuo: sprabbit
-
-# jiathis share id
-# refer to http://jiathis.com
-#jiathis: 1589291
-
 # open graph
 twitter:
 google_plus:
@@ -81,3 +72,8 @@ cc: by-sa
 # Check http://photoswipe.com
 fancybox: true    # enable fancybox/photoswipe rendering
 # photoswipe: true  # the same
+
+# Traffic Statistics
+# Base on http://busuanzi.ibruce.info/
+busuanzi:
+  enable: false

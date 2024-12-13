@@ -1,5 +1,5 @@
 @import "libs/normalize";
-@import "variables";
+@import "_partials/variables";
 
 * {
   box-sizing: border-box;
@@ -15,15 +15,31 @@ a {
   }
 }
 
+// Custom styles.
+.hider_title{
+    font-family: "Microsoft Yahei";
+    cursor: pointer;
+}
+.close:after{
+    content: "▼";
+}
+.open:after{
+    content: "▲";
+}
 
-@import "layout";
-@import "footer";
-@import "sidebar";
-@import "article";
-@import "post-list";
-@import "monochrome";
-@import "highlight";
-@import "pagination";
-@import "archive";
-@import "mobile-header";
-@import "third-party";
+.feed-link a {
+  display: inline-block;
+}
+
+
+@import "_partials/layout";
+@import "_partials/footer";
+@import "_partials/sidebar";
+@import "_partials/article";
+@import "_partials/post-list";
+@import "_partials/monochrome";
+@import "_partials/highlight";
+@import "_partials/pagination";
+@import "_partials/archive";
+@import "_partials/mobile-header";
+@import "_partials/third-party";

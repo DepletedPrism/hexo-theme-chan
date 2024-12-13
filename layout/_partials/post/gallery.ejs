@@ -1,9 +1,9 @@
 <% if (post.photos && post.photos.length){ %>
-  <div class="article-gallery article-gallery-photos" itemscope itemtype="http://schema.org/ImageGallery">
+  <div class="article-gallery article-gallery-photos" itemscope itemtype="//schema.org/ImageGallery">
     <% post.photos.forEach(function(photo, i){
         var photoInfo = post.photoInfos && post.photoInfos[i];
       %>
-      <figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="//schema.org/ImageObject">
         <a href="<%- url_for(photo) %>"
           itemprop="contentUrl"
           rel="gallery_<%= post._id %>"
